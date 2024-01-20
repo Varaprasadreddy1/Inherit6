@@ -1,0 +1,27 @@
+
+class Base {
+  void BaseMethod() {
+    System.out.println("Base method called.");
+  }
+}
+
+class Derived1 extends Base {
+  void Derived1Method() {
+    System.out.println("Derived1 method called.");
+  }
+}
+
+class Derived2 extends Derived1 {
+  void Derived2Method() {
+    System.out.println("Derived2 method called.");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Derived2 obj = new Derived2();
+    obj.BaseMethod();
+    obj.Derived1Method();
+    obj.Derived2Method();
+  }
+}
